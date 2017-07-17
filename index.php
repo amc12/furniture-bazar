@@ -5,11 +5,10 @@
     <title>furniture bazaar</title>
     <meta charset="utf-8" lang="eng">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/jquery-ui.min.css" rel="stylesheet">
   <link href="css/jquery-ui.structure.min.css" rel="stylesheet">
   <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="Css/reset.css">
     <link rel="stylesheet" type="text/css" href="Css/furniture.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -21,10 +20,10 @@
 
 <body>
     <div id="header"></div>
-    <!--<?php
+    <?php
 include_once 'header.html';
 include_once 'navigation.html';
-?>-->
+?>
     <main>
         <!--needs tweaking-->
         <!--deals first area-->
