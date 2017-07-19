@@ -98,7 +98,6 @@ $('.tab-wrapper .tab-select-wrp a').on('click', function(event) {
   var currentTab = $(this).attr('href');
   $('.tab' + currentTab).addClass('active').siblings().removeClass('active');
   
-//  $(this).addClass('active').siblings().removeClass('active');
   event.preventDefault();
 });
 
@@ -131,14 +130,7 @@ $(document).ready(function() {
     for (var i = 0; i< data.length; i++){   
 
       var paginaProduse = "<div class='prod product-container 'id='prod-"+ data[i].ProductName + "'data-price='" + data[i].Price +"'value='" + data[i].CategID +"'>";  
-      /*paginaProduse+= '<div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; margin:20px; padding:15px; height:350px;" text-align="center">' +
-       '<img src="../Img/01.jpg" class="img-responsive" />'+ '<br/>'+  
-       '<div class="name text-info">' + data[i].ProductName +'</div>' +
-       '<div class="price text-danger">' + data[i].Price + '</div>'+ 
-       '<div class="description text-info">'+ data[i].Description + '</div>'+ '</div>';
-      paginaProduse += "</div>";*/
-
- 
+       
       paginaProduse +=  '<div class="products-wrp col-md-3">' + '<img src="'+data[i].imagepath+'"'+'class="img-responsive" style="z-index: 100" />'+ '<br/>'+
         '<div class="quick_view ">Quick View</div>' + '<div class="add_to_cart ">' + '<i class="fa fa-shopping-basket" aria-hidden="true"></i>' +
         'add to cart</div></div>' + '<br/>'+

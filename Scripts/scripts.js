@@ -1,30 +1,9 @@
 
 
-/*$.ajax({
-    method:"POST",
-    url: "../includes/api/userApi.php",
-    data: {
-       apiMethod1: "addUser",
-       username: "joey",
-       pwd:"joey12",
-       email:"ss@k.ro"
-    },
-    success: function(data) {
-      if(data.exists){
-        for(var label in data.information){
-          console.log(label);
-        }
-    
-      } else { alert('not found');} 
-    }
-});*/
-
-
 $(document).ready(function() {
 
 $('.site-navigation div a').click(function() {
-  //$(this).siblings().removeClass('selected');
-  //$(this).addClass('selected');
+  
   $(this).parent().addClass('selected').siblings().removeClass('selected');
 });
 
@@ -46,6 +25,7 @@ $(function () {
           }
       });
       });
+
 function filterSystem(minPrice, maxPrice) {
       $("div.prod").hide().filter(function () {
           var price = parseInt($(this).data("price"), 10);
@@ -91,21 +71,6 @@ function filterSystem(minPrice, maxPrice) {
 
                       }
         
-
-  //console.log('bla', data);}
-
-    /*function(produse) {
-    console.log('success', produse['succesful']);
-    for (var i in produse)
-    {
-      var row = produse[i];          
-
-      var id = row[0];
-      var vname = row[1];
-      $('#output').append("<b>id: </b>"+id+"<b> name: </b>"+vname)
-                  .append("<hr />");
-    } 
-  }*/
        
     });
 
@@ -152,113 +117,3 @@ $("#resetfilters").click(function(){
   
 
 
-/*
-
-$("#bed").click(function createProducts(){
-    //var vclass = $(this).val();
-    //var htmlString = '';
-    //$('.produse').html('');
-    /*$.ajax({
-    url: "../includes/api/productApi.php",
-    
-    type:"GET",
-    data: {
-       apiMethod:"getAllProducts"
-
-    },
-    success: function(data) {
-               //$("#output div.prod").hide(); */
-
-         /*$(".prod").each(function() {
-            var x = $('div[id^="prod-"]').attr('value'); console.log(x);
-            var vclass = $(this).val(); console.log(vclass);
-
-            if (vclass!=$('div[id^="prod-"]').attr('value'))
-            {
-              $("#output div.prod").hide();
-            }
-
-        });
-
-        });*/
-             //console.log(vclass);
-/*
-          $(".prod").each((console.log($('div[id^="prod-"]').attr('value'))));
-
-          $("#output div.prod").hide().filter(function(){
-           var vclass = $("#bed").val();
-
-           return (vclass===$('div[id^="prod-"]').attr('value'));
-
-          }).show();
-        });*/
-
-        /*if (data[i].CategID == $())
-        htmlString += '<div class="title">' + data[i].ProductName+ '</div>'*/
-                
-    
-    //$('.produse').html(htmlString);
-
-//VARIANTA
-/*$('#bed').click(function createProducts(){
-    var htmlString = '';
-    $('.produse').html('');
-    $.ajax({
-    url: "../includes/api/productApi.php",
-    
-    type:"GET",
-    data: {
-       apiMethod:"getAllProducts"
-
-    },
-    success: function(data) {
-    for (var i = 0; i < data.length; i++){
-        if (data[i].CategID ==3)
-        htmlString += '<div class="title">' + data[i].ProductName+ '</div>'
-                }
-    
-    $('.produse').html(htmlString);
-}
-});
-});
-*/
-
-//Bob's tips
-
-  /*.then(function(data) {
-  console.log(data)});
-});
-
- method: "GET",
-  url: " ",
-  success: function(produse) {
-    console.log(produse);
-    var paginaProduse = "<div class = 'container'>";
-    for (var i = 0; i< produse.length; i++){
-      paginaProduse+= '<div class="title">' + produse[i].titlu + '</div>'}
-    paginaProduse += "</div>"
-  }
-})*/
-
-/*var produse = {};
-
-console.log(produse);
-
-
-var createProducts = function (products, categtype, categ){
-    var htmlString = '';
-    $('.produse').html('');
-    
-    for (var i = 0; i < products.length(); i++){
-        if (products[i].CategoryID === categ){
-        htmlString += '<div class="title">' + products[i].productName+ '</div>'
-        
-        }
-    }
-    $('.produse').html(htmlString);
-}
-
-createProducts(produse.details, 'Price', '100.000');  // e un pret dintr-o baza de date oferita de un coleg
-// createProducts(produse.details, 'CategoryID', '200.000');
-// createProducts(produse.details, 'productID', 3);
-var produse- est lista cu produse obtinuta in urma interograrii bazei de date*/
