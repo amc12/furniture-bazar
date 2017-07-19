@@ -236,14 +236,14 @@ include_once 'navigation.html';
                 </div>
             </div>
     </main>
-    <!--<?php include_once 'footer.html'; ?>-->
+    <?php include_once 'footer.html'; ?>
     <div id="footer"></div>
     <script src="https://code.jquery.com/jquery-3.2.0.min.js" type="text/javascript"></script>
     <!--<script src="js/jquery-3.2.0.min.js"></script>-->
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!--<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap.min.js"></script>-->
     <script src="SCRIPTS/scripts-home.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
